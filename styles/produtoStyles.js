@@ -1,0 +1,136 @@
+import { StyleSheet } from "react-native";
+import { CORES, FONTES } from "../constants/themes";
+
+export const styles = StyleSheet.create({
+  tela: { flex: 1, backgroundColor: CORES.bg },
+  scrollContent: { padding: 16, paddingBottom: 40 },
+
+  breadcrumb: { flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 16 },
+  breadcrumbTexto: { fontFamily: FONTES.body, fontWeight: "600", fontSize: 13, color: CORES.muted },
+
+  // "Foto" do livro — como não temos capas reais, replica o fallback do
+  // site (selo + título + autor) que já existia no produto.html.
+  imagemContainer: {
+    backgroundColor: "#f8fafc",
+    borderWidth: 1,
+    borderColor: CORES.borderLight,
+    borderRadius: 16,
+    alignItems: "center",
+    justifyContent: "center",
+    paddingVertical: 48,
+    paddingHorizontal: 24,
+    marginBottom: 20,
+  },
+  imagemSelo: {
+    fontFamily: FONTES.body,
+    fontSize: 11,
+    fontWeight: "700",
+    color: "#94a3b8",
+    letterSpacing: 2,
+    textTransform: "uppercase",
+    marginBottom: 16,
+  },
+  imagemTitulo: {
+    fontFamily: FONTES.display,
+    fontSize: 22,
+    fontWeight: "700",
+    color: CORES.dark,
+    textAlign: "center",
+  },
+  imagemDivisor: { height: 2, width: 40, backgroundColor: CORES.borderLight, marginVertical: 16 },
+  imagemAutor: { fontFamily: FONTES.body, fontSize: 14, color: CORES.muted },
+
+  categoriaTexto: {
+    fontFamily: FONTES.body,
+    fontWeight: "700",
+    fontSize: 12,
+    color: CORES.muted,
+    textTransform: "uppercase",
+    letterSpacing: 1,
+    marginBottom: 6,
+  },
+  titulo: { fontFamily: FONTES.display, fontSize: 26, color: CORES.dark, marginBottom: 8 },
+  preco: { fontFamily: FONTES.body, fontWeight: "700", fontSize: 26, color: CORES.dark, marginBottom: 20 },
+
+  especificacoesBox: {
+    backgroundColor: CORES.white,
+    borderWidth: 1,
+    borderColor: CORES.borderLight,
+    borderRadius: 12,
+    padding: 18,
+    marginBottom: 20,
+  },
+  especTitulo: {
+    fontFamily: FONTES.body,
+    fontWeight: "700",
+    fontSize: 15,
+    color: CORES.dark,
+    borderBottomWidth: 2,
+    borderBottomColor: CORES.borderLight,
+    paddingBottom: 10,
+    marginBottom: 10,
+  },
+  especLinha: { flexDirection: "row", marginBottom: 6 },
+  especLabel: { fontFamily: FONTES.body, fontWeight: "700", fontSize: 13, color: CORES.dark, marginRight: 4 },
+  especValor: { fontFamily: FONTES.body, fontSize: 13, color: CORES.dark, flex: 1 },
+
+  descricaoBox: { marginBottom: 20 },
+  descricaoTitulo: { fontFamily: FONTES.body, fontWeight: "700", fontSize: 15, color: CORES.dark, marginBottom: 8 },
+  descricaoTexto: { fontFamily: FONTES.body, fontSize: 14, color: "#475569", lineHeight: 20 },
+
+  // Simulador de frete
+  freteBox: {
+    backgroundColor: "#f8fafc",
+    borderWidth: 1,
+    borderColor: CORES.borderLight,
+    borderRadius: 16,
+    padding: 18,
+    marginBottom: 20,
+  },
+  freteLabel: { fontFamily: FONTES.body, fontWeight: "700", fontSize: 14, color: CORES.dark, marginBottom: 10 },
+  freteLinha: { flexDirection: "row", gap: 10 },
+  freteInput: {
+    flex: 1,
+    borderWidth: 1,
+    borderColor: CORES.border,
+    borderRadius: 8,
+    paddingHorizontal: 14,
+    height: 46,
+    fontFamily: FONTES.body,
+    fontSize: 14,
+    color: CORES.dark,
+    backgroundColor: CORES.white,
+  },
+  freteBotao: {
+    backgroundColor: CORES.header,
+    borderRadius: 8,
+    paddingHorizontal: 20,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  freteBotaoTexto: { fontFamily: FONTES.body, fontWeight: "700", fontSize: 14, color: CORES.white },
+  freteResultado: {
+    marginTop: 14,
+    backgroundColor: CORES.white,
+    borderWidth: 1,
+    borderStyle: "dashed",
+    borderColor: CORES.border,
+    borderRadius: 8,
+    padding: 14,
+  },
+  freteResultadoLinha: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    borderBottomWidth: 1,
+    borderBottomColor: CORES.borderLight,
+    paddingBottom: 8,
+    marginBottom: 8,
+  },
+  freteResultadoFrete: { fontFamily: FONTES.body, fontWeight: "700", fontSize: 13, color: "#059669" },
+  freteResultadoValor: { fontFamily: FONTES.body, fontWeight: "700", fontSize: 14, color: CORES.dark },
+  fretePrazo: { fontFamily: FONTES.body, fontSize: 13, color: CORES.muted },
+
+  vazioContainer: { flex: 1, alignItems: "center", justifyContent: "center", padding: 24 },
+  vazioTexto: { fontFamily: FONTES.body, fontSize: 15, color: CORES.muted },
+});
